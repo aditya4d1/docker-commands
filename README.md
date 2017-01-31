@@ -14,4 +14,5 @@ sudo docker push adityaatluri/rocm-kfd-only
 sudo docker commit -m "Test 2" -a "Aditya Atluri" 87130bf8b241 rocm-kfd-only
 sudo docker ps -a
 sudo docker pull adityaatluri/rocm-terminal
+sudo docker run -it --user aditya --device="/dev/kfd" rocm-trusty-base:user
 ```
