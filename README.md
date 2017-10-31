@@ -16,4 +16,6 @@ sudo docker ps -a
 sudo docker pull adityaatluri/rocm-terminal
 sudo docker run -it --user aditya --device="/dev/kfd" rocm-trusty-base:user
 sudo docker exec -it 3b39b196aa97 bash
+sudo docker rm --force $(sudo docker ps -aq)
+sudo docker rmi $(sudo docker images -q)
 ```
